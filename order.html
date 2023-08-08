@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Title for the order page -->
+     <h1>Place an Order</h1>
+
+     <!-- Form to collect details for the order -->
+     <!-- begins a form element where users can submit information -->
+     <form action="/submit_order" method="post">
+        <!-- label for text imput, prompts the user to enter their name-->
+         <label for="name">Name:</label><br>
+         <!-- a text input where the user can type their name the 'id' associates this input with its label -->
+         <input type="text" id="name" name="name"><br>
+         <!-- a label for text input, prompts the user to enter their email address -->
+         <label for="email">Email:</label><br>
+         <!-- a text input where a user can type their email address -->
+         <input type="text" id="email" name="email"><br>
+         <label for="product">Product:</label><br>
+         <select id="product" name="product">
+             <option value="Lion's mane Coffee">Lion's mane Coffee</option>
+             <option value="Cordyceps Coffee">Cordyceps Coffee</option>
+         </select><br>
+         <label for="quantity">Quantity:</label><br>
+         <input type="number" id="quantity" name="quantity" min="1"><br>
+         <input type="submit" value="Submit">
+     </form>
+     <img height = 300px src="pictures /images.jpg" alt="Mushroom Coffee">
+ 
+   
+     <h3>Navigate:</h3>
+     <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="products.html">Our Products</a></li>
+     </ul>
+    
+</body>
+</html>
